@@ -44,7 +44,8 @@ function report (result){
 function gameStep (){
 	var input = this.value;
 	var cmd = interpret(input);
-	...
+	var rpt = report(cmd);
+	var exec = execute(rpt);
 }
 var gameStart = function(){
 	var inputBox = document.querySelector("input");
