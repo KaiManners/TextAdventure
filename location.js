@@ -62,6 +62,17 @@ function locater(){
   }
 }
 
+map.getLocNumber = function(locName){
+	var locNum = -1;
+	for(i in this.locations){
+		if(location === this.locations[i].name){
+			locNum = i;
+			break;
+		}
+	}
+	return locNum;
+}
+
 map.locations = [
 	//the unexpected quality of death
 	new Location("Doctor's Office", "Ivan had just received the news that he has an incurable disease. He fell down a stepladder and hurt his side and now he's destined to die. You follow Ivan and listen."),
