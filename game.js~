@@ -27,6 +27,16 @@ function interpret(string){
 	stuff.object = FourthStep;
 }
 
+/*
+function interpret(input){
+	console.log("calling interpret");
+	var cmd = {}, tokens = input.trim().toLowerCase().split(" ");
+	cmd.action = players[tokens.shift()];
+	cmd.target = tokens.join(" ");
+	return cmd;
+}
+*/
+
 function execute (command) {
 	var action = command.action;
 	var target = command.target;
