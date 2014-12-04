@@ -4,6 +4,11 @@ var newPlayer = {
 };
 
 newPlayer.pickUp = function(item){
+	//check if item is in the currentLocation
+		//if so, add the item to player's items
+		//and, remove it from the current location
+	//if not...
+		//display message informing the user 
 	this.items.push(item)
 };
 newPlayer.drop = function(name){
