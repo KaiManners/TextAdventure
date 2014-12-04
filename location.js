@@ -65,8 +65,8 @@ function locater(){
 map.getLocNumber = function(locName){
 	var locNum = -1;
 	for(i in this.locations){
-		if(location === this.locations[i].name){
-			locNum = i;
+		if(locName === this.locations[i].name){
+			locNum = 1;
 			break;
 		}
 	}
