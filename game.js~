@@ -4,11 +4,6 @@ var newPlayer = {
 };
 
 newPlayer.pickUp = function(item){
-	//check if item is in the currentLocation
-		//if so, add the item to player's items
-		//and, remove it from the current location
-	//if not...
-		//display message informing the user 
 	this.items.push(item)
 };
 newPlayer.drop = function(name){
@@ -32,16 +27,6 @@ function interpret(string){
 	stuff.object = FourthStep;
 }
 
-/*
-function interpret(input){
-	console.log("calling interpret");
-	var cmd = {}, tokens = input.trim().toLowerCase().split(" ");
-	cmd.action = players[tokens.shift()];
-	cmd.target = tokens.join(" ");
-	return cmd;
-}
-*/
-
 function execute (command) {
 	var action = command.action;
 	var target = command.target;
@@ -59,8 +44,7 @@ function report (result){
 function gameStep (){
 	var input = this.value;
 	var cmd = interpret(input);
-	var rpt = report(cmd);
-	var exec = execute(rpt);
+	...
 }
 var gameStart = function(){
 	var inputBox = document.querySelector("input");
