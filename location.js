@@ -63,16 +63,19 @@ function locater(){
 }
 
 player.goto = function(locName){
-	var newLoc = locName.getLocNumber();
-	for(i in map.locations){ //searching for locName in map.locations
-		if(locName == map.locations[i].name){ //if locName is in map.locations[i]
-			if(newLoc == currLoc.getLocNum();{
-				currLoc = newLoc;
-			}else{
-				console.log("You can't go there.");
-			}
-		}else{
-			console.log("Location doesn't exist.");
+    var newLoc =locName.getLocNumber();
+    for(i in map.locations){
+        if(locName == map.locations[i].name){ 
+            if(newLoc == currLoc.getLocNum();){
+                currLoc = newLoc;
+            }else{
+                console.log("You can't go there.");
+            }
+        }else{
+            //print only it has gone through everything
+		console.log("Location doesn't exist.");
+        }
+     }
 }
 			
 map.getLocNumber = function(locName){
