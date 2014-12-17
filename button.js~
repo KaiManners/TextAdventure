@@ -1,5 +1,0 @@
-var x = document.querySelector("#kai");
-x.addEventListener("keypressed", function(){
-	if(keyCode == 38){
-		console.log("It was me, Barry!");
-}});
