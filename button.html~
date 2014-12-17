@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head> My Page </head>
+<body>
+<button id="kai"> Click Me! </button>
+<p></p>
+<script> 
+var x = document.getElementById("kai");
+x.addEventListener("click", function(){
+	document.querySelector("p").innerHTML = "It was me, Barry!";
+}); 
+</script>
+</body>
+</html> 

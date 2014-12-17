@@ -1,0 +1,7 @@
+function myFunction(){
+	var p = document.createElement("A");
+	var t = document.setAttribute("href", "www.g4.com");
+	p.appendChild(t);
+	document.body.appendChild(p);
+}
+

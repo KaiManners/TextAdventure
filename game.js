@@ -1,43 +1,25 @@
-var newPlayer = {
-	name: name,
-	items: [],
-	pickUp : function(item){
-		items.push(item)
-	}
-
-	drop : function(name){
-		var pos = items.indexOf(name)
-		if (pos >= 0){
-			items.splice(pos, 1);
-		}
-	}
-
-};
 
 //inventory doesn't need a "function", just a display. pickup and drop should only 
 //document.createElement()
 //document.createTextNode()
 //document.querySelector
+//help me
 
 function interpret(string){
-	var stuff = {
-		action : action,
-		target : object
-	}
-	var newString = ""
+	var stuff = {}
 	var FirstStep = string.trim();
 	var SecondStep = FirstStep.split(" ");
 	var ThirdStep = SecondStep.shift();
 	stuff.action = ThirdStep;
-	var FourthStep = ThirdStep.join();
+	var FourthStep = SecondStep.join();
 	stuff.object = FourthStep;
+	return stuff;
 }
 
 function execute (command) {
 	var action = command.action;
 	var target = command.target;
-	var func = player[action];
-	var func(target);
+	player[action](target);
 }
 
 function report (result){
